@@ -10,6 +10,7 @@
     home.packages = with pkgs; [
       vscode
       brave
+      gnomeExtensions.dash-to-panel
     ];
 
     programs = {
@@ -17,6 +18,14 @@
         enable = true;
         userName = "lowerlee";
         userEmail = "minleekevin@gmail.com";
+      };
+    };
+
+    dconf.settings = {
+      "org/gnome/shell" = {
+        enabled-extensions = [
+          "dash-to-panel@jderose9.github.com"
+        ];
       };
     };
 
