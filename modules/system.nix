@@ -21,5 +21,8 @@
   environment.systemPackages = with pkgs; [
     gnome-tweaks
     home-manager
+    tree
+    mullvad-vpn
+    tailscale
   ];
 }

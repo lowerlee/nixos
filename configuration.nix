@@ -10,6 +10,7 @@
     ./modules/users.nix
     ./modules/system.nix
     ./modules/home-manager.nix
+    ./modules/tailscale.nix
   ];
 
   system.stateVersion = "24.11";
