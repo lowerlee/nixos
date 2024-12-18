@@ -22,7 +22,8 @@
     gnome-tweaks
     home-manager
     tree
-    mullvad-vpn
     tailscale
+    sshfs
+    mediawriter
   ];
 }

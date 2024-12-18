@@ -19,6 +19,14 @@
         userName = "lowerlee";
         userEmail = "minleekevin@gmail.com";
       };
+      bash = {
+        enable = true;
+        shellAliases = {
+          build = "sudo nixos-rebuild switch";
+          sshk = "ssh k@10.0.0.102";
+          bridge = "sshfs k@10.0.0.102:/etc/nixos/ ~/nixos-server/";
+        };
+      };
     };
 
     dconf.settings = {
