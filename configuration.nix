@@ -10,6 +10,8 @@
     ./modules/users.nix
     ./modules/system.nix
     ./modules/home-manager.nix
+    ./modules/tailscale.nix
+    ./modules/syncthing.nix
   ];
 
   system.stateVersion = "24.11";

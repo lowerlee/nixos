@@ -21,5 +21,9 @@
   environment.systemPackages = with pkgs; [
     gnome-tweaks
     home-manager
+    tree
+    tailscale
+    sshfs
+    mediawriter
   ];
 }
