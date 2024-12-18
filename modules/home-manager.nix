@@ -11,6 +11,7 @@
       vscode
       brave
       gnomeExtensions.dash-to-panel
+      obsidian
     ];
 
     programs = {
@@ -25,6 +26,12 @@
           build = "sudo nixos-rebuild switch";
           sshk = "ssh k@10.0.0.102";
           bridge = "sshfs k@10.0.0.102:/etc/nixos/ ~/nixos-server/";
+          add = "sudo git add .";
+          commit = "sudo git commit -m";
+          push = "sudo git push origin";
+          branch = "sudo git branch";
+          checkout = "sudo git checkout";
+          nixos = "cd /etc/nixos";
         };
       };
     };

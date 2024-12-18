@@ -3,6 +3,7 @@
 {
   services.syncthing = {
     enable = true;
+    guiAddress = "0.0.0.0:8384";
     openDefaultPorts = true;
     dataDir = "/home/kevin";
     user = "kevin";
@@ -19,6 +20,10 @@
           path = "/home/kevin/Documents/obsidian";
           devices = [ "pixel9-pro-xl" ];
         };
+      };
+      options = {
+        localAnnounceEnabled = false;
+        relaysEnabled = false;
       };
     };
   };
