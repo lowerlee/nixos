@@ -4,7 +4,14 @@
   networking = {
     hostName = "nixos";
     networkmanager.enable = true;
-    firewall.checkReversePath = "loose";
+    firewall = {
+      checkReversePath = "loose";
+      # Add Syncthing ports
+      allowedTCPPorts = [ 8384 22000 ];
+      allowedUDPPorts = [ 22000 21027 ];
+      trustedInterfaces = [ "tailscale0" ];
+      enable = true;
+    };
     nftables.enable = true;
   };
 
