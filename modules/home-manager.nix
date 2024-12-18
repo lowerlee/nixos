@@ -31,6 +31,7 @@
           push = "sudo git push origin";
           branch = "sudo git branch";
           checkout = "sudo git checkout";
+          merge = "sudo git merge";
           nixos = "cd /etc/nixos";
         };
       };
