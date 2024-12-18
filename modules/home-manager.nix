@@ -11,6 +11,7 @@
       vscode
       brave
       gnomeExtensions.dash-to-panel
+      obsidian
     ];
 
     programs = {
@@ -28,6 +29,9 @@
           add = "sudo git add .";
           commit = "sudo git commit -m";
           push = "sudo git push origin";
+          branch = "sudo git branch";
+          checkout = "sudo git checkout";
+          nixos = "cd /etc/nixos";
         };
       };
     };
