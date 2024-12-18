@@ -12,6 +12,7 @@
     ./modules/home-manager.nix
     ./modules/tailscale.nix
     ./modules/syncthing.nix
+    ./modules/steam.nix
   ];
 
   system.stateVersion = "24.11";
